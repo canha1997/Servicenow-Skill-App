@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Cert Acquisition" max_length="40" name="x_402053_skill_eva_cert_acquisition" type="collection">
+        <element label="Certificate" max_length="32" name="certificate" reference="x_402053_skill_eva_certificate" type="reference"/>
+        <element choice="1" label="Proficency level" max_length="50" name="proficency_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1-Conceptual Trained" value="concep"/>
+                <element inactive_on_update="false" label="2-Experienced" value="exper"/>
+                <element inactive_on_update="false" label="3-Expert" value="expert"/>
+                <element inactive_on_update="false" label="4-Guru" value="guru"/>
+                <element inactive_on_update="false" label="N/A" value="na"/>
+            </choice>
+        </element>
+        <element label="Submission" max_length="32" name="submission" reference="x_402053_skill_eva_submission" type="reference"/>
+        <index name="index">
+            <element name="certificate"/>
+        </index>
+        <index name="index2">
+            <element name="submission"/>
+        </index>
+    </element>
+</database>

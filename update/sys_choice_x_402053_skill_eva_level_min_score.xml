@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="min_score" table="x_402053_skill_eva_level" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>min_score</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>15</label>
+            <language>en</language>
+            <name>x_402053_skill_eva_level</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-23 06:09:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5637b5b9db800010ff3f5385ca96191e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-23 06:09:52</sys_updated_on>
+            <value>15</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>min_score</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>25</label>
+            <language>en</language>
+            <name>x_402053_skill_eva_level</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-23 06:10:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e5873979db800010ff3f5385ca96196d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-23 06:10:02</sys_updated_on>
+            <value>25</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>min_score</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>30</label>
+            <language>en</language>
+            <name>x_402053_skill_eva_level</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-23 06:10:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d09735b9db800010ff3f5385ca961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-23 06:10:12</sys_updated_on>
+            <value>30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>min_score</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>45</label>
+            <language>en</language>
+            <name>x_402053_skill_eva_level</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-23 06:10:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb97f1b9db800010ff3f5385ca961978</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-23 06:10:24</sys_updated_on>
+            <value>45</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>min_score</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>60</label>
+            <language>en</language>
+            <name>x_402053_skill_eva_level</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-23 06:10:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>81a735b9db800010ff3f5385ca9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-23 06:10:32</sys_updated_on>
+            <value>60</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>min_score</element>
+            <name>x_402053_skill_eva_level</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-23 06:09:52</sys_created_on>
+            <sys_id>c77739b9db800010ff3f5385ca961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>min_score</sys_name>
+            <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+            <sys_update_name>sys_choice_x_402053_skill_eva_level_min_score</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-23 06:09:52</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

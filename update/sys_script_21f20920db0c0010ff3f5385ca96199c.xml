@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_402053_skill_eva_submission</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Submission Creat Skill Assigment</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var ge =  new GlideRecord('x_402053_skill_eva_skill_assetment');
+	var ga = new GlideRecord('x_402053_skill_eva_skill');
+	ga.query();
+	while(ga.next())
+		{
+			ge.initialize();
+		    ge.setValue('proficiency_level','none');
+			ge.skill = ga.sys_id;
+			ge.submission = current.sys_id;
+			ge.insert();
+		}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-19 05:14:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>21f20920db0c0010ff3f5385ca96199c</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Submission Creat Skill Assigment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>sys_script_21f20920db0c0010ff3f5385ca96199c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-19 13:21:11</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=21f20920db0c0010ff3f5385ca96199c"/>
+</record_update>
