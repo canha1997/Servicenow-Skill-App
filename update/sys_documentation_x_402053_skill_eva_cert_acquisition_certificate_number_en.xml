@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="proficency_level" label="Proficency level" language="en" table="x_402053_skill_eva_cert_acquisition">
+    <sys_documentation element="certificate_number" label="Certificate Number" language="en" table="x_402053_skill_eva_cert_acquisition">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>proficency_level</element>
+            <element>certificate_number</element>
             <help/>
             <hint/>
-            <label>Proficency level</label>
+            <label>Certificate Number</label>
             <language>en</language>
             <name>x_402053_skill_eva_cert_acquisition</name>
-            <plural>Proficency levels</plural>
+            <plural>Certificate Numbers</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-09-19 03:39:03</sys_created_on>
-            <sys_id>8b9eace0dbc80010ff3f5385ca9619f9</sys_id>
+            <sys_created_on>2019-09-23 13:54:48</sys_created_on>
+            <sys_id>f5e12bb5dbc40010ff3f5385ca961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Proficency level</sys_name>
+            <sys_name>Certificate Number</sys_name>
             <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
             <sys_policy/>
             <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
-            <sys_update_name>sys_documentation_x_402053_skill_eva_cert_acquisition_proficency_level_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_402053_skill_eva_cert_acquisition_certificate_number_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-09-19 03:39:03</sys_updated_on>
+            <sys_updated_on>2019-09-23 13:54:48</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

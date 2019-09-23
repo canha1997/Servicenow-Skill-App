@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Level" max_length="40" name="x_402053_skill_eva_level" type="collection">
         <element display="true" label="Level" max_length="80" name="level" type="string"/>
-        <element choice="1" label="Min Score" max_length="40" name="min_score" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="15" value="15"/>
-                <element inactive_on_update="false" label="25" value="25"/>
-                <element inactive_on_update="false" label="30" value="30"/>
-                <element inactive_on_update="false" label="45" value="45"/>
-                <element inactive_on_update="false" label="60" value="60"/>
-            </choice>
-        </element>
+        <element label="Min Score" max_length="40" name="min_score" type="integer"/>
     </element>
 </database>

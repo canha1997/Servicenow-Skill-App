@@ -11,7 +11,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Min Score</column_label>
@@ -32,7 +32,7 @@
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
+        <internal_type display_value="Integer">integer</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_402053_skill_eva_level</name>
@@ -52,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-09-19 07:00:36</sys_created_on>
-        <sys_id>96acdd24db4c0010ff3f5385ca961908</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2019-09-23 12:52:41</sys_created_on>
+        <sys_id>9f9393f9db840010ff3f5385ca961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Min Score</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
         <sys_update_name>sys_dictionary_x_402053_skill_eva_level_min_score</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-23 06:28:13</sys_updated_on>
+        <sys_updated_on>2019-09-23 12:52:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
