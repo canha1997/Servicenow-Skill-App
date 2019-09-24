@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_402053_skill_eva.CheckProcess</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CheckProcess</name>
+        <script><![CDATA[var CheckProcess = Class.create();
+CheckProcess.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getProcess : function()
+	{
+		
+		var assig_to = this.getParameter('assig_pa');
+		var sub = new GlideRecord('x_402053_skill_eva_submission');
+		sub.addQuery('assigned_to',assig_to);
+		sub.query();
+		while(sub.next() != null) {
+			return 1;
+		}
+
+	},
+	type: 'CheckProcess'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-24 02:57:38</sys_created_on>
+        <sys_id>59229e4adb000010ff3f5385ca961962</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>CheckProcess</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>sys_script_include_59229e4adb000010ff3f5385ca961962</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-24 06:10:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -2,18 +2,18 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-09-22 10:01:47</sys_created_on>
-        <sys_id>2cf2adaddb400010ff3f5385ca961947</sys_id>
+        <sys_created_on>2019-09-24 06:23:45</sys_created_on>
+        <sys_id>9c440b82dbc00010ff3f5385ca9619d5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>.se_admin</sys_name>
+        <sys_name>x_402053_skill_eva_submission.x_402053_skill_eva.user</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
-        <sys_security_acl display_value="x_402053_skill_eva_skill_assetment">07d2e1eddb400010ff3f5385ca961905</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_2cf2adaddb400010ff3f5385ca961947</sys_update_name>
+        <sys_security_acl display_value="x_402053_skill_eva_submission">c0440b82dbc00010ff3f5385ca9619d3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9c440b82dbc00010ff3f5385ca9619d5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-22 10:01:47</sys_updated_on>
-        <sys_user_role display_value="se_admin" name="se_admin">835ecaf3db333300ff3f5385ca9619fb</sys_user_role>
+        <sys_updated_on>2019-09-24 06:23:45</sys_updated_on>
+        <sys_user_role display_value="x_402053_skill_eva.user" name="x_402053_skill_eva.user">b6c214d0db000010ff3f5385ca961982</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

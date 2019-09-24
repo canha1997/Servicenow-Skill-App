@@ -9,8 +9,8 @@
                 <element inactive_on_update="false" label="N/A" value="none"/>
             </choice>
         </element>
-        <element label="Skill" max_length="32" name="skill" reference="x_402053_skill_eva_skill" type="reference"/>
-        <element display="true" label="Submission" max_length="32" name="submission" reference="x_402053_skill_eva_submission" type="reference"/>
+        <element display="true" label="Skill" max_length="32" name="skill" reference="x_402053_skill_eva_skill" type="reference"/>
+        <element label="Submission" max_length="32" name="submission" reference="x_402053_skill_eva_submission" type="reference"/>
         <index name="index">
             <element name="skill"/>
         </index>
