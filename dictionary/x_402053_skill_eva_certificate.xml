@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Certificate" max_length="40" name="x_402053_skill_eva_certificate" type="collection">
-        <element label="Certificate name" max_length="500" name="certificate_name" type="string"/>
-        <element label="Product Line" max_length="32" name="product_line" reference="x_402053_skill_eva_product_line" type="reference"/>
+        <element display="true" label="Certificate Name" max_length="200" name="certificate_name" type="string"/>
+        <element label="Product line" max_length="32" name="product_line" reference="x_402053_skill_eva_product_line" type="reference"/>
         <index name="index">
             <element name="product_line"/>
         </index>

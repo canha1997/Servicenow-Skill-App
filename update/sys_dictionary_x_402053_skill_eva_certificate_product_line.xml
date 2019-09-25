@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Product Line</column_label>
+        <column_label>Product line</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -52,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-09-18 07:07:26</sys_created_on>
-        <sys_id>ee941454db000010ff3f5385ca961958</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Product Line</sys_name>
+        <sys_created_on>2019-09-24 07:58:51</sys_created_on>
+        <sys_id>27d95346db040010ff3f5385ca96197e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Product line</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
         <sys_update_name>sys_dictionary_x_402053_skill_eva_certificate_product_line</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-18 07:07:26</sys_updated_on>
+        <sys_updated_on>2019-09-24 08:46:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
