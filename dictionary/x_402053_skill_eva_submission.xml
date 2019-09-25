@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Submission" max_length="40" name="x_402053_skill_eva_submission" type="collection">
-        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Description" mandatory="true" max_length="1000" name="description" type="string"/>
         <element label="Level" max_length="32" name="level" reference="x_402053_skill_eva_level" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
@@ -15,7 +15,7 @@
             </choice>
         </element>
         <element label="Updated by" max_length="40" name="updated_by" type="string"/>
-        <element default="true" label="Valid" max_length="40" name="valid" type="boolean"/>
+        <element label="Valid" max_length="40" name="valid" type="boolean"/>
         <element label="Work notes" max_length="4000" name="work_notes" type="string"/>
         <index name="index">
             <element name="level"/>
