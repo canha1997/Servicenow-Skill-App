@@ -15,7 +15,7 @@
             </choice>
         </element>
         <element label="Updated by" max_length="40" name="updated_by" type="string"/>
-        <element label="Valid" max_length="40" name="valid" type="boolean"/>
+        <element default="true" label="Valid" max_length="40" name="valid" type="boolean"/>
         <element label="Work notes" max_length="4000" name="work_notes" type="string"/>
         <index name="index">
             <element name="level"/>

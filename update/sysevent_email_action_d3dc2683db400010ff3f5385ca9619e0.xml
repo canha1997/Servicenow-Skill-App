@@ -35,12 +35,11 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Assigned to: ${assigned_to} : You have submitted new submission (submission Number: Number: ${number}), please check your and edit your submission. After that you have to submit for review and wait for Approve from PM.</p>
-<p>&nbsp;</p>
-<p>Click here to view the record:&nbsp;${URI_REF}</p>]]></message_html>
+        <message_html><![CDATA[<p>Assigned to: ${assigned_to}</p>
+<p>Click here to view the record:&nbsp;${URI_REF}&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>New Record send to User</name>
+        <name>New Submission</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -51,23 +50,23 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>You have Submit new Submission</subject>
+        <subject>Skill Evalution Submission Number: ${number}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-09-25 07:18:19</sys_created_on>
+        <sys_created_on>2019-09-27 07:18:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>722a1022db400010ff3f5385ca96192f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>New Record send to User</sys_name>
+        <sys_id>d3dc2683db400010ff3f5385ca9619e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Submission</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
-        <sys_update_name>sysevent_email_action_722a1022db400010ff3f5385ca96192f</sys_update_name>
+        <sys_update_name>sysevent_email_action_d3dc2683db400010ff3f5385ca9619e0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-25 08:37:24</sys_updated_on>
+        <sys_updated_on>2019-09-27 07:18:56</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
