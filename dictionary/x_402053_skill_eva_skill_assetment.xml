@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Skill Assetment" max_length="40" name="x_402053_skill_eva_skill_assetment" sizeclass="8960" type="collection">
-        <element choice="1" default="none" label="Proficiency level" max_length="100" name="proficiency_level" type="choice">
+    <element label="Skill Assetment" max_length="40" name="x_402053_skill_eva_skill_assetment" type="collection">
+        <element choice="1" default="none" label="Proficiency level" max_length="40" name="proficiency_level" type="choice">
             <choice>
-                <element inactive_on_update="false" label="1 - Conceptial" value="concep"/>
-                <element inactive_on_update="false" label="2 - Expericened" value="exp"/>
+                <element inactive_on_update="false" label="1 - Conceptual/Trained" value="concep"/>
+                <element inactive_on_update="false" label="2 - Experienced" value="exp"/>
                 <element inactive_on_update="false" label="3 - Expert" value="expert"/>
                 <element inactive_on_update="false" label="4 - Guru" value="guru"/>
                 <element inactive_on_update="false" label="N/A" value="none"/>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Cert Acquisition" max_length="40" name="x_402053_skill_eva_cert_acquisition" type="collection">
-        <element display="true" label="Certificate" max_length="32" name="certificate" reference="x_402053_skill_eva_certificate" type="reference"/>
+        <element label="Certificate" max_length="32" name="certificate" reference="x_402053_skill_eva_certificate" type="reference"/>
         <element label="Certificate Number" max_length="200" name="certificate_number" type="string"/>
+        <element label="Certified date" max_length="40" name="certified_date" type="glide_date"/>
+        <element label="Servicenow release" max_length="400" name="servicenow_release" type="string"/>
         <element label="Submission" max_length="32" name="submission" reference="x_402053_skill_eva_submission" type="reference"/>
         <index name="index">
             <element name="certificate"/>
