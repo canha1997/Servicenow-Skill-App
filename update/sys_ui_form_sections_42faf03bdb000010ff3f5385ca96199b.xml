@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="42faf03bdb000010ff3f5385ca96199b" sys_domain="global" table="x_402053_skill_eva_submission" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-29 06:53:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8afaf03bdb000010ff3f5385ca96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_402053_skill_eva_submission" name="x_402053_skill_eva_submission" sys_domain="global" view="Default view">42faf03bdb000010ff3f5385ca96199b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_402053_skill_eva_submission" sys_domain="global" view="Default view">477d1958dbc00010ff3f5385ca9619e1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-29 06:53:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-29 06:53:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4efaf03bdb000010ff3f5385ca96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_402053_skill_eva_submission" name="x_402053_skill_eva_submission" sys_domain="global" view="Default view">42faf03bdb000010ff3f5385ca96199b</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_402053_skill_eva_submission" sys_domain="global" view="Default view">82faf03bdb000010ff3f5385ca96199c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-29 06:53:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_402053_skill_eva_submission</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-29 06:53:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42faf03bdb000010ff3f5385ca96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_402053_skill_eva_submission</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+            <sys_update_name>sys_ui_form_sections_42faf03bdb000010ff3f5385ca96199b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-29 06:53:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

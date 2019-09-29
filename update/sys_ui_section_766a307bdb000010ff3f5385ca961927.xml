@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Notes" section_id="766a307bdb000010ff3f5385ca961927" sys_domain="global" table="x_402053_skill_eva_submission" version="3" view="notes">
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Notes</caption>
+            <header>false</header>
+            <name>x_402053_skill_eva_submission</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-29 06:50:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>766a307bdb000010ff3f5385ca961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Notes</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+            <sys_update_name>sys_ui_section_766a307bdb000010ff3f5385ca961927</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-29 06:50:54</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Notes" name="notes">525a343bdb000010ff3f5385ca9619bb</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
