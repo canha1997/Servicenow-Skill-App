@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_402053_skill_eva.CallerInfor</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CallerInfor</name>
+        <script><![CDATA[var CallerInfor = Class.create();
+CallerInfor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getCallerInfor: function(){
+		var user_id=this.getParameter('sys_id_get');
+		var result={};
+			var test = new GlideRecord('sys_user');
+			test.addQuery('sys_id',user_id);
+			test.query();
+			if(test.next())
+				{
+					alert('fdsfsdfsdfdddd');
+				result.email=test.email;
+				result.phone_number=test.phone_number;
+			}
+			return JSON.stringify(result);
+		},
+		type: 'CallerInfor'
+	});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-30 09:25:06</sys_created_on>
+        <sys_id>3526aec0dbdc0010ff3f5385ca961920</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CallerInfor</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>sys_script_include_3526aec0dbdc0010ff3f5385ca961920</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-30 09:29:56</sys_updated_on>
+    </sys_script_include>
+</record_update>
