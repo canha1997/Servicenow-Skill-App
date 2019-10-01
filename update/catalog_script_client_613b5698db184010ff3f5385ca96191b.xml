@@ -8,53 +8,51 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Oracle eBusiness Admin Request">14806940db1c0010ff3f5385ca96196e</cat_item>
-        <cat_variable/>
+        <cat_variable>IO:c678024cdb5c0010ff3f5385ca96193a</cat_variable>
         <condition/>
         <description/>
         <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Populated Requested For</name>
+        <name>Check Start Time Vacation</name>
         <order/>
-        <script><![CDATA[function onLoad() {
-	var getPa=new GlideAjax('CallerInfor');
-	getPa.addParam('sysparm_name','getCallerInfor');
-	getPa.addParam('sys_id_get',g_user.userID);
-	getPa.getXML(function(response){
-		var answer =  response.responseXML.documentElement.getAttribute("answer");
-		answer = JSON.parse(answer);
-		g_form.setValue('requested_email',answer.email);
-		g_form.setValue('requested_contact',answer.mobile_phone);
-// 		g_form.setReadOnly('requested_email',true);
-// 		g_form.setReadOnly('requested_contact',true);
-// 		g_form.setReadOnly('requested_for',true);
-// 		g_form.setReadOnly('requested_for_employ',true);
-		
-		
-		
-		
-		
-	});
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	
+	if(g_form.getValue('end_date') == false)
+		{
+		g_form.addInfoMessage('Please choose end date');
+	}
+	if(g_form.getValue('end_date'))
+		{
+		if(g_form.getValue('start_date') > g_form.getValue('end_date'))
+			{
+			g_form.addErrorMessage('Start date have to smaller than End Date');
+		}
+	}
+	
 	
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-09-30 09:25:01</sys_created_on>
+        <sys_created_on>2019-10-01 03:12:30</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0f166ec0dbdc0010ff3f5385ca961991</sys_id>
-        <sys_mod_count>30</sys_mod_count>
-        <sys_name>Populated Requested For</sys_name>
+        <sys_id>613b5698db184010ff3f5385ca96191b</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Check Start Time Vacation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
-        <sys_update_name>catalog_script_client_0f166ec0dbdc0010ff3f5385ca961991</sys_update_name>
+        <sys_update_name>catalog_script_client_613b5698db184010ff3f5385ca96191b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-01 05:46:22</sys_updated_on>
+        <sys_updated_on>2019-10-01 05:45:40</sys_updated_on>
         <table/>
-        <type>onLoad</type>
+        <type>onChange</type>
         <ui_type>10</ui_type>
         <variable_set/>
         <view/>
