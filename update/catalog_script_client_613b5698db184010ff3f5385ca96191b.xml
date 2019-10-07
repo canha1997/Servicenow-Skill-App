@@ -3,7 +3,7 @@
         <active>true</active>
         <applies_catalog>true</applies_catalog>
         <applies_extended>false</applies_extended>
-        <applies_req_item>false</applies_req_item>
+        <applies_req_item>true</applies_req_item>
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
@@ -21,7 +21,18 @@
 	if (isLoading || newValue == '') {
 		return;
 	}
+	var ga= new GlideAjax('GetNowTime');
+	ga.addParam('sysparm_name','getTime');
+	ga.getXML(function(response){
+		var answer1 =  response.responseXML.documentElement.getAttribute("answer");
+		var answer2 = JSON.parse(answer1);
+		alert(answer2);
+	});
 	
+	
+	
+	
+	/////////////////////////////////
 	if(g_form.getValue('end_date') == false)
 		{
 		g_form.addInfoMessage('Please choose end date');
@@ -30,7 +41,13 @@
 		{
 		if(g_form.getValue('start_date') > g_form.getValue('end_date'))
 			{
-			g_form.addErrorMessage('Start date have to smaller than End Date');
+			g_form.addErrorMessage('Start date have to before End Date');
+			g_form.clearValue('start_date');
+		}
+		else if(g_form.getValue('start_date') < time)
+			{
+			g_form.addErrorMessage('Start date have to after present day');
+			g_form.clearValue('start_date');
 		}
 	}
 	
@@ -42,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>613b5698db184010ff3f5385ca96191b</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Check Start Time Vacation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
@@ -50,7 +67,7 @@
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
         <sys_update_name>catalog_script_client_613b5698db184010ff3f5385ca96191b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-01 05:45:40</sys_updated_on>
+        <sys_updated_on>2019-10-02 09:34:36</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

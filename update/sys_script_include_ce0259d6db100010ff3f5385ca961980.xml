@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_402053_skill_eva.TestReturnMultibleValue</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>TestReturnMultibleValue</name>
+        <script><![CDATA[var TestReturnMultibleValue = Class.create();
+TestReturnMultibleValue.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getElement: function()
+	{
+		var result =  this.newItem("result");
+		result.setAttribute("message","returning all favorites");
+		this._getValue("Megami","Aqua");
+		this._getValue("Megumin","Explosion");
+	},
+	_getValue : function(name,value)
+	{
+		var test = this.newItem("test");
+		test.setAttribute("name",name);
+		test.setAttribute("value",value);
+	},
+	type: 'TestReturnMultibleValue'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-07 03:20:06</sys_created_on>
+        <sys_id>ce0259d6db100010ff3f5385ca961980</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>TestReturnMultibleValue</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>sys_script_include_ce0259d6db100010ff3f5385ca961980</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-07 04:27:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -19,6 +19,8 @@ CallerInfor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 				
 				result.email=''+test.email;
 				result.mobile_phone=''+test.mobile_phone;	
+				result.employee_number=''+test.employee_number;
+			
 			//	result.phone_number=test.mobile_phone;
 				//	gs.addInfoMessage(result.email);
 				//	gs.addInfoMessage(result.mobile_phone);
@@ -32,13 +34,13 @@ CallerInfor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-09-30 09:25:06</sys_created_on>
         <sys_id>3526aec0dbdc0010ff3f5385ca961920</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>CallerInfor</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
         <sys_update_name>sys_script_include_3526aec0dbdc0010ff3f5385ca961920</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-30 12:23:12</sys_updated_on>
+        <sys_updated_on>2019-10-04 06:24:41</sys_updated_on>
     </sys_script_include>
 </record_update>

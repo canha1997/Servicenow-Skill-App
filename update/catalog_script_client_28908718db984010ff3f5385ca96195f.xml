@@ -30,7 +30,8 @@
 			{
 			if(newValue < g_form.getValue('time_from'))
 				{
-				g_form.addErrorMessage('Time To date have to bigger than Time from date');
+				g_form.addErrorMessage('Time To date have to after Time from date');
+					g_form.clearValue('time_to');
 			}
 		}
 	
@@ -42,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>28908718db984010ff3f5385ca96195f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Check Time to </sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
@@ -50,7 +51,7 @@
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
         <sys_update_name>catalog_script_client_28908718db984010ff3f5385ca96195f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-01 05:57:27</sys_updated_on>
+        <sys_updated_on>2019-10-02 02:24:58</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

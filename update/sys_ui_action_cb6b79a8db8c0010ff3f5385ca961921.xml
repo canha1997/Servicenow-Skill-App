@@ -33,7 +33,7 @@
 	g_form.setDisplay('level',true);
 	gsftSubmit(null, g_form.getFormElement(), 'update_review'); //MUST call the 'Action
 }
- 
+
 if(typeof window == 'undefined')
 	runBusRuleCode();
 
@@ -46,23 +46,9 @@ function runBusRuleCode(){
 	ge.query();
 	while(ge.next())
 		{
+		var temp = parseInt(ge.proficiency_level);
+		x+=temp;
 		
-		if(ge.getValue('proficiency_level') == 'concep')
-			{
-			x = x+1;
-		}
-		else if(ge.getValue('proficiency_level') == 'exp')
-			{
-			x = x+2;
-		}
-		else if(ge.getValue('proficiency_level') == 'expert')
-			{
-			x = x+3;
-		}
-		else if(ge.getValue('proficiency_level') == 'guru')
-			{
-			x = x+4;
-		}
 		
 	}
 	current.valid = 'true';
@@ -70,43 +56,20 @@ function runBusRuleCode(){
 	current.state = 'submit';
 	current.update();
 	//	action.setRedirectURL(current); // sau khi update thi` quay tro lai cai form current ma` ta dang lam, neu ko co lenh nay thi no se hien len table list thay vi` form
-// 	if(x >= 15 && x < 25)
-// 		{
-// 		current.level = '8526b9f0db084010ff3f5385ca9619b4';
-// 		current.update();
-// 	}
-// 	else if (x >= 25 && x <30)
-// 		{
-// 		current.level = 'fe3679f0db084010ff3f5385ca961903';
-// 		current.update();
-// 	}
-// 	else if(x >= 30 && x < 45)
-// 		{
-// 		current.level = '7a46b1f0db084010ff3f5385ca9619b0';
-// 		current.update();
-// 	}
-// 	else if(x >= 45 && x <60)
-// 		{
-// 		current.level = 'b45639f0db084010ff3f5385ca961990';
-// 		current.update();
-// 	}
-// 	else if(x >= 60)
-// 		{
-// 		current.level = '635679f0db084010ff3f5385ca961954';
-// 		current.update();
-// }
+	
 	var test = new GlideRecord('x_402053_skill_eva_level');
+	test.orderBy('min_score');
 	test.query();
 	while(test.next())
 		{
+		
+		if(current.score >= test.min_score)
+			{
 			
-			if(current.score >= test.min_score)
-				{
-					
-					current.level=test.sys_id;
-					current.update();
-				}
+			current.level=test.sys_id;
+			current.update();
 		}
+	}
 	action.setRedirectURL(current);
 }
 ]]></script>
@@ -120,7 +83,7 @@ function runBusRuleCode(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cb6b79a8db8c0010ff3f5385ca961921</sys_id>
-        <sys_mod_count>117</sys_mod_count>
+        <sys_mod_count>120</sys_mod_count>
         <sys_name>Submit for Review</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
@@ -128,7 +91,7 @@ function runBusRuleCode(){
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
         <sys_update_name>sys_ui_action_cb6b79a8db8c0010ff3f5385ca961921</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-26 02:01:53</sys_updated_on>
+        <sys_updated_on>2019-10-02 07:31:41</sys_updated_on>
         <table>x_402053_skill_eva_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>OpenedBy</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+/* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+/* Optional GlideRecord */ event) {
+	var app = new GlideRecord('sysapproval_approver');
+	app.addQuery('document_id',current.sys_id);
+	app.addQuery('state','requested');
+	app.query();
+	if(app.next()) 
+		{
+		template.print("Opened By:"+app.approver.name);
+	}
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-04 02:58:26</sys_created_on>
+        <sys_id>d4d27d95db100010ff3f5385ca9619df</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>OpenedBy</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>sys_script_email_d4d27d95db100010ff3f5385ca9619df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-04 04:06:59</sys_updated_on>
+    </sys_script_email>
+</record_update>
