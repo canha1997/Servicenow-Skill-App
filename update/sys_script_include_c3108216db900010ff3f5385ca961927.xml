@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_402053_skill_eva.CheckPast</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CheckPast</name>
+        <script><![CDATA[var CheckPast = Class.create();
+CheckPast.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getCheckPast:function()
+	{
+		var result={};
+			gs.include('moment.js');
+			var Time=moment().format("YYYY-MM-DD");  // nowTime
+			var userTime=this.getParameter('now_time');
+			//   return JSON.stringify(userTime);
+			if(userTime < Time)
+				{
+				result.var1=1;
+				result.var2 = ''+Time;
+				
+			}
+		return JSON.stringify(result);
+			// 		result.setAttribute("check",flag);
+			// 		result.setAttribute("currenttime",Time);
+			
+		},
+		
+		type: 'CheckPast'
+	});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-07 06:27:01</sys_created_on>
+        <sys_id>c3108216db900010ff3f5385ca961927</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>CheckPast</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>sys_script_include_c3108216db900010ff3f5385ca961927</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-08 08:32:05</sys_updated_on>
+    </sys_script_include>
+</record_update>

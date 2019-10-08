@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Oracle eBusiness Admin Request">14806940db1c0010ff3f5385ca96196e</cat_item>
+        <cat_variable>IO:9c60c284db5c0010ff3f5385ca9619d3</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Check Past</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	
+	var test = new GlideAjax('CheckPast');
+	test.addParam('sysparm_name','getCheckPast');
+	test.addParam('now_time',newValue);
+	test.getXML(function(response){
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		answer = JSON.parse(answer);
+		if(answer.var1 ==1)
+			{
+			g_form.addErrorMessage("Can't choose time in the past, TODAY is " + answer.var2);
+			g_form.clearValue('time_from');
+		}
+		//alert(answer);
+		// 		if(answer == 1)
+		// 			{
+			// 			g_form.addErrorMessage("Can't choose time in the past");
+			// 			g_form.clearValue('time_from');
+			// 		}
+		});
+		
+		
+	}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-07 06:29:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb508616db900010ff3f5385ca961969</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Check Past</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>catalog_script_client_fb508616db900010ff3f5385ca961969</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-08 08:32:18</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>
