@@ -9,10 +9,7 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description><![CDATA[<p>Select to raise a request for Admin task associated with eBusiness User Accounts.</p>
-<p>Including set up of vacation rules, Time Card Removal, delegated access for Expenses.</p>
-<p>This form does NOT cover acess requests or changes to set up data (i.e. Supervisor or CLD changes) please go here. (for testing purpose, add any catalog item as Hyperlink, for example: /sp?id&#61;sc_cat_item&amp;sys_id&#61;8525a0854fec9f40bcc94c111310c790 )</p>
-<p>NOTE: For all of these items you will need Line Manager approval before the request will be processed.</p>]]></description>
+        <description><![CDATA[<p><span style="background-color: #ffffff; color: #ff6600;"><strong><span style="font-size: 18pt;">Log a Service Request for an eBusiness Admin Activity</span></strong></span></p>]]></description>
         <entitlement_script/>
         <group/>
         <hide_sp>false</hide_sp>
@@ -59,14 +56,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-09-30 04:17:25</sys_created_on>
         <sys_id>14806940db1c0010ff3f5385ca96196e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Oracle eBusiness Admin Request</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
         <sys_update_name>sc_cat_item_14806940db1c0010ff3f5385ca96196e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-01 08:01:17</sys_updated_on>
+        <sys_updated_on>2019-10-24 02:57:34</sys_updated_on>
         <template/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_402053_skill_eva.GetAttachSys</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetAttachSys</name>
+        <script><![CDATA[var GetAttachSys = Class.create();
+GetAttachSys.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getSys:function()
+	{
+	
+		var test = this.getParameter('sc_cart');
+		var gr = new GlideRecord("sys_attachment");
+		gr.addQuery("table_name",test);
+		gr.query();
+		if (!gr.next()) {
+			return 1;
+		}
+		
+	},
+	type: 'GetAttachSys'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-24 09:39:26</sys_created_on>
+        <sys_id>20505a3fdbe00010ff3f5385ca96198c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>GetAttachSys</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_402053_skill_eva">26c29490db000010ff3f5385ca961945</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Skill Evaluation">26c29490db000010ff3f5385ca961945</sys_scope>
+        <sys_update_name>sys_script_include_20505a3fdbe00010ff3f5385ca96198c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-24 09:52:35</sys_updated_on>
+    </sys_script_include>
+</record_update>
